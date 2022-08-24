@@ -42,8 +42,8 @@
            app.post('/pdf',upload.single('logo'),async(req,res) =>{
               let user = req.body;
               user.address = user.address.toString().trim() || "";
-              console.log("user",user);
-              console.log("user>>>>>",user.address.length);
+               console.log("user",user);
+            //   console.log("user>>>>>",user.address.length);
               let image  = req.file.filename;
               let logo   =   await imageToBase64(`public/iamges/${image}`);// Path to the image
               let insta  =   await imageToBase64("public/iamges/insta.png");// Path to the image
@@ -64,25 +64,26 @@
                       mail,
                       weblogo
                 })   
-                  
                  
-              const options = { "width":"216mm", "height":"425mm"}
-
-               pdf.create( pdfTemplate,options).toFile(path.join(__dirname, 'html.pdf'), (err, result) => {
+                 
+               const options = { "width":"216mm", "height":"425mm",}
+              
+               pdf.create( pdfTemplate,options).toFile(path.join(__dirname, 'businesscard.pdf'), (err, result) => {
                     if (!err) {
-                     console.log(result.filename)
+                     console.log(result)
                      }
-                            res.sendFile( path.join(__dirname, 'html.pdf'))
-                            //     res.render('index',{user,
-                            //     logo,
-                            //     insta,
-                            //     twitter,
-                            //     map,
-                            //     call,
-                            //     mail,
-                            //     weblogo
-                            // });
-                        })
+                            res.sendFile( path.join(__dirname, 'businesscard.pdf'))
+                           //      res.render('index',{user,
+                           //      logo,
+                           //      insta,
+                           //      twitter,
+                           //      map,
+                           //      call,
+                           //      mail,
+                           //      weblogo
+                           //  });
+                         })
+                           fs.unlinkSync(`public/iamges/${image}`);
                        })
 
        app.listen(PORT, () => console.log(`Server Running at port ${PORT}`));
