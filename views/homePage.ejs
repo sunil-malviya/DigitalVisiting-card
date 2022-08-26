@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Contact Form 10</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<section class="ftco-section img " style="background-image: url(images/bg_1.jpg);">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="wrapper">
+						<div class="row no-gutters justify-content-between">
+							<div class="col-lg-5 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-5">
+									<img style="padding: 150px 0px 40px 1px;"
+										src=" images/round.png"
+										alt="">
+									<h3 class="mb-4">Digital <span style="color:#0191D0 ;">Visiting Card</span> </h3>
+									<!-- <div class="dbox w-100 d-flex align-items-start">
+										<p>Please fill your information bellow</p>
+									</div>
+									<div class="dbox w-100 d-flex align-items-start" style="">
+										<p><a href="https://vastraapp.com/">vastraapp.com</a></p>
+									</div> -->
+								</div>
+							</div>
+							<div class="col-lg-7">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Submit your information here!</h3>
+                                 <form action="/pdf-view" method="post" enctype="multipart/form-data">
+									<div class="">
+										<input type="file" class="form-control-file" name="logo" style="background-color: rgb(238, 238, 238);
+										 width: 100%;
+										 margin: 0 0px 28px 1px;
+										 padding: 16px;
+										 text-align: center;
+										 border-radius: 90px; ">
+									</div>
+									<div id="form-message-warning" class="mb-4"></div>
+									<div id="form-message-success" class="mb-4">
+										Your message was sent, thank you!
+									</div>
+									<form method="POST" id="contactForm" name="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="cname" id="name"
+														placeholder="Company Name">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="address" id="Address maxlength="140" 
+	                                                                                placeholder="Address" required>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="city" maxlength="25" 
+														id="City Name" placeholder="City Name">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="url" class="form-control" name="fb"
+														id="Facebook Link" placeholder="Facebook Link">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="Email" maxlength="35" 
+														placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="url" class="form-control" name="insta"
+														id="Instagram Link" placeholder="Instagram Link">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="number" class="form-control" name="phone" id="phone" maxlength="10" 
+														placeholder="Phone">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="url" class="form-control" name="twitter"
+														id="YouTube Link" placeholder="Twitter Link">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="number" class="form-control" name="wphone"maxlength="10" 
+														id="WhatsApp Number" placeholder="WhatsApp Number">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="url" class="form-control" name="web"
+														id="Web" placeholder="Web link">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+												</div>
+											</div>
+											<div class="col-md-6" style="text-align:end ;">
+												<div class="form-group">
+													<input type="submit" value="CREATE VISITING CARD" class="btn btn-primary">
+													<div class="submitting"></div>
+                                    
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
