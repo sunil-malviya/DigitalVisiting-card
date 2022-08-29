@@ -410,7 +410,6 @@ mark,
   display: inline-block; }
 
 .figure-img {
-  margin-bottom: 0.5rem;
   line-height: 1; }
 
 .figure-caption {
@@ -465,7 +464,7 @@ pre {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1530px; } }
+      max-width: 1200px; } }
 
 .container-fluid {
   width: 100%;
@@ -8164,7 +8163,7 @@ h1, h2, h3, h4, h5,
   background: #1089ff !important; }
 
 .ftco-section {
-  padding: 9em 0;
+  padding: 4em 0;
 margin: 0 auto; }
 
 .ftco-no-pt {
@@ -8195,7 +8194,9 @@ margin: 0 auto; }
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: scroll;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
 }
 
 .form-control {
@@ -8319,3 +8320,7 @@ textarea.form-control {
   display: none;
   font-size: 16px;
   font-weight: 500; }
+.head{
+  margin: 0 0 0 14px;
+  font-size: 14px;
+}

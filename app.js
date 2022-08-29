@@ -95,7 +95,7 @@
                       weblogo
                  })   
 
-                 let height =  370+((addLine-1)*11);
+                 let height =  370+((addLine-1)*12);
                  if(cline>1){
                      if(cline>2){ 
                      height = (height + 35);}
