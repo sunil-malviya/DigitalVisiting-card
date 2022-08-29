@@ -36,7 +36,7 @@
             
 
            app.get('/',(req,res) =>{
-              res.render('homePage');
+              res.render('HomeForm');
              })
         
            app.post('/pdf-view',upload.single('logo'),async(req,res) =>{
