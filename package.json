@@ -1,10 +1,11 @@
 {
   "name": "testcode",
   "version": "1.0.0",
+  
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +22,8 @@
     "multer": "^1.4.5-lts.1",
     "nodemon": "^2.0.19",
     "path": "^0.12.7",
-    "pdf-creator-node": "^2.3.5"
+    "pdf-creator-node": "^2.3.5",
+    "pdf-export-images": "^1.0.9"
   },
   "repository": {
     "type": "git",

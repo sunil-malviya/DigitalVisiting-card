@@ -20,7 +20,7 @@
                                     <img style="padding: 150px 0px 40px 1px;"
                                         src="images/round.png"
                                         alt="">
-                                    <h3 class="mb-3">Create Digital <span style="color:#0191D0 ;">Visiting Card</span> </h3>
+                                    <h3 class="mb-3">Download Images <span style="color:#0191D0 ;"> from PDF-file</span> </h3>
                                         
                                     <!-- <div class="dbox w-100 d-flex align-items-start">
                                         <p>Please fill your information bellow</p>
@@ -29,93 +29,29 @@
                                         <p><a href="https://vastraapp.com/">vastraapp.com</a></p>
                                     </div> -->
                                 </div>
-                            </div>
+                            </div>  <form action="/download-images" method="post" enctype="multipart/form-data">
                             <div class="col-lg-8">
                                 <div class="contact-wrap w-100 p-md-5 p-4">
                                      
-                                    <h3 class="mb-4">Get & Share Digital Identity of Your Business!</h3>      
-                                   <h4>Enter Below information about your organisation and click on Generate Digital Visiting Card.</h4>                              
-                              <form action="/pdf-view" method="post" enctype="multipart/form-data">
+                                    <h3 class="mb-4">Export All Images Form PDF-file !</h3>      
+                                                                 
+                            
                                     <div class="">
                                         <span class="head">Upload Your Company Logo Here!</span>
-                                        <input type="file" class="form-control-file" name="logo"  style="background-color: rgb(238, 238, 238);
+                                        <input type="file" class="form-control-file" name="file"  style="background-color: rgb(238, 238, 238);
                                          width: 100%;
                                          margin: 0 0px 20px 1px;
                                          padding: 16px;
                                          text-align: center;
                                          border-radius: 90px; ">
                                     </div>
-                                    <div id="form-message-warning" class="mb-4"></div>
-                                    <div id="form-message-success" class="mb-4">
-                                        Your message was sent, thank you!
-                                    </div>
-                                   
-                                        <div class="row">
-                                            <div class="col-md-6"> <span class="head">Company Name</span>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="cname" id="name"
-                                                        placeholder="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6"> <span class="head">City </span>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="city"
-                                                        id="City Name" placeholder="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12"> <span class="head">Address</span>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="address" id="address"
-                                                        placeholder="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group"> <span class="head">Email</span>
-                                                    <input type="email" class="form-control" name="email" id="Email"
-                                                        placeholder="">
-                                                </div>
-                                                </div>
-                                                    <div class="col-md-6"> <span class="head">Primary Mobile No</span>
-                                                <div class="form-group">
-                                                    <input type="number" class="form-control" name="phone" id="Phone"
-                                                        placeholder="">
-                                                </div>
-                                            </div>
-                                                        <div class="col-md-6"> <span class="head">WhatsApp Mobile Number</span>
-                                                <div class="form-group">
-                                                    <input type="number" class="form-control" name="wphone" id="Phone"
-                                                        placeholder="">
-                                                </div>
-                                            </div>
-                                                <div class="col-md-6"> <span class="head">Facebook Url</span>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="fb"
-                                                        id="Facebook Link" placeholder="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6"> <span class="head">Instagram Url</span>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="insta"
-                                                        id="Instagram Link" placeholder="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6"> <span class="head">Twitter Url</span>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="twitter"
-                                                        id="twitter Link" placeholder="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6"> <span class="head">Enter Your WebSite</span>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="web"
-                                                        id="Twitter Link" placeholder="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6" style="text-align:end ;">
+                                    <div class="col-md-12" style="text-align:end ;">
                                                 <div class="form-group" style="margin: 30px 0 0 10px;">
-                                                    <input type="submit" value="GENERATE VISITING CARD" class="btn btn-primary">
+                                                    <input type="submit" value="CREATE VISITING CARD"
+                                                        class="btn btn-primary">
                                                     <div class="submitting"></div>
                                                 </div>
+                                            </div>
                                             </div>
                                         </div>
                                     </form>
@@ -124,8 +60,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
     <script src="js/jquery.min.js"></script>
     <!-- <script src="js/popper.js"></script> -->

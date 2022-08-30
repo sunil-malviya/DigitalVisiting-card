@@ -15,9 +15,9 @@
        app.use(express.static("public"))
        app.set('view engine', 'ejs');
        const PORT = process.env.PORT || 4000 ;
-    
+      //  const extrect = require('pdf-export-images')
        
-     
+      
           let storage = multer.diskStorage({
                     destination: (req, file, callBack) => {
                           callBack(null, 'public/iamges/')     // './public/images/' directory name where save the file
@@ -95,7 +95,7 @@
                       weblogo
                  })   
 
-                 let height =  370+((addLine-1)*12);
+                 let height =  370+((addLine-1)*13);
                  if(cline>1){
                      if(cline>2){ 
                      height = (height + 35);}
@@ -123,5 +123,19 @@
                          })
                            
                        })
-          
+         //   app.get('/image',(req,res) =>{
+         //      res.render('homePage');
+         //     })
+        
+
+
+
+         //   app.post('/download-images',upload.single('file'),async(req,res)  =>{
+         //     let pdfFile =  req.body.file;
+         //     console.log(pdfFile)
+         //    extrect.exportImages(pdfFile, 'img')
+         //    .then(img => console.log('Exported', img.length, 'img'))
+         //    .catch(console.error)
+     
+         //   })
        app.listen(PORT, () => console.log(`Server Running at port ${PORT}`));
