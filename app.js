@@ -124,7 +124,7 @@
                            
                        })
          //   app.get('/image',(req,res) =>{
-         //      res.render('homePage');
+         //      res.render('exportsImg');
          //     })
         
 

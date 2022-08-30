@@ -5,142 +5,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <title>Download pdf</title>
 
 </head>
 
-<body onload="myFunction()" style="background-image: url(images/bg_1.jpg);background-image: url(images/bg_1.jpg);
+<body onload="myFunction()" style="background-image: url(images/bg_1.jpg);
     background-size: cover;
-    /* background-repeat: no-repeat; */
-    background-position: center center;
+     background-repeat: no-repeat; 
+    background-position:  center;
     background-attachment: scroll;
     height: auto;
     width: 100%;">
 
     <div>
- 
+
         <div class="container">
-           <div class="col-lg-12 d-flex align-items-stretch digicard">
-                                <div class="info-wrap w-100 p-5" style="margin: -200px 0 0 0px; text-align: center;">
-                                    <img style="padding: 150px 0px 40px 1px;" alt="">
-                                    <h3 class="mb-4" style="color: white; font-family: arial; font-size: 40px;">Download Your Visiting Card
-                                    </h3>
-                                    <!-- <div class="dbox w-100 d-flex align-items-start">
-                                        <p>Please fill your information bellow</p>
-                                    </div>
-                                    <div class="dbox w-100 d-flex align-items-start" style="">
-                                        <p><a href="https://vastraapp.com/">vastraapp.com</a></p>
-                                    </div> -->
-                                </div>
-                            </div>
-            <div class="body" style="text-align: center ;">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="col-lg-12 d-flex align-items-stretch digicard">
+                        <div class="info-wrap w-100 p-5" style="margin: -200px 0 0 0px; text-align: center;">
+                            <img style="padding: 150px 0px 40px 1px;" alt="">
+                            <h3 class="mb-4" style="color: white; font-family: arial; font-size: 40px;">Download Your
+                                Visiting Card
+                            </h3>
 
-                <div class="header"></div>
-                <div class="logo">
-                    <a href=""> <img src="data:image/png;base64,<%= logo %>" alt="" style="width:200px" height="200px">
-                    </a>
-                </div>
-                <div class="companyname" id="Co-name">
-                    <span>
-                        <h1 class="c-name">
-                            <%= user.cname %>
-                        </h1>
-                    </span>
-                    <span>
-                        <p class="cityname">
-                            <%= user.city %>
-                        </p>
-                    </span>
-                </div>
-                <div class="content">
-                    <div style="display: -webkit-box;-webkit-box-pack: center;justify-content: center;">
-
-                        <a href="https://wa.me/+91<%= user.wphone %>" class="buttonw" style="background-color: green;">
-                            WHATSAPP
-                        </a>
-                        <div class="call">
-                            <a href="tel:+91<%= user.phone %>" class="buttonw">
-                                CALL NOW
-                            </a>
                         </div>
                     </div>
-                    <div>
-                        <div class="address" style="margin-top: 5%;">
-                            <div class="add" id="add-container"
-                                style="display: -webkit-flex; padding-bottom: 8px;padding-top: 8px;">
-                                <div class="user-address-section">
-                                    <h4 class="fulladd">ADDRESS</h4>
-                                    <p class="add-text" style="word-wrap: break-word; display:inline;" id="address-sk">
-                                        <%= user.address %>
-                                    </p>
-                                </div>
-                                <div class="lc-icon">
-                                    <a href="https://www.google.com/maps/place/<%= user.address %>"
-                                        style="text-decoration: none; color: black;">
-                                        <span class="material-symbols-outlined"
-                                            style="font-size: 40px; margin-top: 15px; color: rgb(255, 255, 255);"><img
-                                                class="form-icon" src="data:image/png;base64,<%= map %>"
-                                                style="margin-left: 15px;" alt=""></span>
+                    <div class="body" style="text-align: center ;">
+
+                        <div class="header"></div>
+                        <div class="logo">
+                            <a href=""> <img src="data:image/png;base64,<%= logo %>" alt="" style="width:200px"
+                                    height="200px">
+                            </a>
+                        </div>
+                        <div class="companyname" id="Co-name">
+                            <span>
+                                <h1 class="c-name">
+                                    <%= user.cname %>
+                                </h1>
+                            </span>
+                            <span>
+                                <p class="cityname">
+                                    <%= user.city %>
+                                </p>
+                            </span>
+                        </div>
+                        <div class="content">
+                            <div style="display: -webkit-box;-webkit-box-pack: center;justify-content: center;">
+
+                                <a href="https://wa.me/+91<%= user.wphone %>" class="buttonw"
+                                    style="background-color: green;">
+                                    WHATSAPP
+                                </a>
+                                <div class="call">
+                                    <a href="tel:+91<%= user.phone %>" class="buttonw">
+                                        CALL NOW
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="phone">
-                            <a href="tel:+91<%= user.phone %>" style="text-decoration: none; color: black;">
-                                <div class="infophon">
-                                    <h4>PHONE</h4>
-                                    <p>
-                                        <%= user.phone %>
-                                    </p>
+                            <div>
+                                <div class="address" style="margin-top: 5%;">
+                                    <div class="add" id="add-container"
+                                        style="display: -webkit-flex; padding-bottom: 8px;padding-top: 8px;">
+                                        <div class="user-address-section">
+                                            <h4 class="fulladd">ADDRESS</h4>
+                                            <p class="add-text" style="word-wrap: break-word; display:inline;"
+                                                id="address-sk">
+                                                <%= user.address %>
+                                            </p>
+                                        </div>
+                                        <div class="lc-icon">
+                                            <a href="https://www.google.com/maps/place/<%= user.address %>"
+                                                style="text-decoration: none; color: black;">
+                                                <span class="material-symbols-outlined"
+                                                    style="font-size: 40px; margin-top: 15px; color: rgb(255, 255, 255);"><img
+                                                        class="form-icon" src="data:image/png;base64,<%= map %>"
+                                                        style="margin-left: 15px;" alt=""></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone">
+                                    <a href="tel:+91<%= user.phone %>" style="text-decoration: none; color: black;">
+                                        <div class="infophon">
+                                            <h4>PHONE</h4>
+                                            <p>
+                                                <%= user.phone %>
+                                            </p>
 
+                                        </div>
+                                        <div class="ph-icon">
+                                            <span class="material-symbols-outlined"
+                                                style="font-size: 40px; margin-left: 15px; margin-top: 15px; color: rgb(255, 255, 255);"><img
+                                                    class="form-icon" src="data:image/png;base64,<%= call %>"></span>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="ph-icon">
-                                    <span class="material-symbols-outlined"
-                                        style="font-size: 40px; margin-left: 15px; margin-top: 15px; color: rgb(255, 255, 255);"><img
-                                            class="form-icon" src="data:image/png;base64,<%= call %>"></span>
+                                <div class="email">
+                                    <a href="mailto:<%= user.email %>" style="text-decoration: none; color: black;">
+                                        <div class="infophon">
+                                            <h4>EMAIL</h4>
+                                            <p>
+                                                <%= user.email %>
+                                            </p>
+                                        </div>
+                                        <div class="email-icon">
+                                            <span class="material-symbols-outlined"
+                                                style="font-size: 40px; margin-left: 15px; margin-top: 15px; color: rgb(255, 255, 255);"><img
+                                                    class="form-icon" src="data:image/png;base64,<%= mail %>" </span>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="email">
-                            <a href="mailto:<%= user.email %>" style="text-decoration: none; color: black;">
-                                <div class="infophon">
-                                    <h4>EMAIL</h4>
-                                    <p>
-                                        <%= user.email %>
-                                    </p>
+                                </tr>
+                            </div>
+                            <div class="footer">
+                                <div class="in">
+                                    <a href="<%= user.fb %>"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVRYw2NgoADYRM1iBOJAIF4LxI+B+DcQ/wXi70D8GohvArE9Ay0A0GAxID4IxP8J4ABaWM4FxBeJsJxmDmgk0nLqOwBoIAsQvxpIBxjjsWwLECdAE2YAFEtS2wGROCw/DMoVDLQGQEtScTigiYEeAI8DqkYdQAvLxIHYAw1PxOGABVjUgjA7JQ4IICG/Y8N/gJhtIB3wkNIooNQBBwbaAQsG2gH1lDpAAYjT0fBiHJZtwKJWa7QgGnXAqANGHTDqgFEHDFsH/MOCyXIAAIEbjbKBgCXkAAAAAElFTkSuQmCC"
+                                            style="width: 40px; margin-top: 20px;" alt=""> </a>
                                 </div>
-                                <div class="email-icon">
-                                    <span class="material-symbols-outlined"
-                                        style="font-size: 40px; margin-left: 15px; margin-top: 15px; color: rgb(255, 255, 255);"><img
-                                            class="form-icon" src="data:image/png;base64,<%= mail %>" </span>
+                                <div class="in">
+                                    <a href="<%= user.insta %>"><img src="data:image/png;base64,<%= insta %>"
+                                            style="width: 53px;margin-top: 14px;" alt=""> </a>
                                 </div>
-                            </a>
-                        </div>
-                        </tr>
-                    </div>
-                    <div class="footer">
-                        <div class="in">
-                            <a href="<%= user.fb %>"><img
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVRYw2NgoADYRM1iBOJAIF4LxI+B+DcQ/wXi70D8GohvArE9Ay0A0GAxID4IxP8J4ABaWM4FxBeJsJxmDmgk0nLqOwBoIAsQvxpIBxjjsWwLECdAE2YAFEtS2wGROCw/DMoVDLQGQEtScTigiYEeAI8DqkYdQAvLxIHYAw1PxOGABVjUgjA7JQ4IICG/Y8N/gJhtIB3wkNIooNQBBwbaAQsG2gH1lDpAAYjT0fBiHJZtwKJWa7QgGnXAqANGHTDqgFEHDFsH/MOCyXIAAIEbjbKBgCXkAAAAAElFTkSuQmCC"
-                                    style="width: 40px; margin-top: 20px;" alt=""> </a>
-                        </div>
-                        <div class="in">
-                            <a href="<%= user.insta %>"><img src="data:image/png;base64,<%= insta %>"
-                                    style="width: 53px;margin-top: 14px;" alt=""> </a>
-                        </div>
-                        <div class="in">
-                            <a href="<%= user.twitter %>"><img src="data:image/png;base64,<%= twitter %>"
-                                    style="width: 50px;margin-top: 15px;" alt=""> </a>
-                        </div>
-                        <div class="in">
-                            <a href="<%= user.web %>"><img src="data:image/png;base64,<%= weblogo %>"
-                                    style="width: 45px; margin-top: 17px;" alt=""> </a>
-                            </a>
+                                <div class="in">
+                                    <a href="<%= user.twitter %>"><img src="data:image/png;base64,<%= twitter %>"
+                                            style="width: 50px;margin-top: 15px;" alt=""> </a>
+                                </div>
+                                <div class="in">
+                                    <a href="<%= user.web %>"><img src="data:image/png;base64,<%= weblogo %>"
+                                            style="width: 45px; margin-top: 17px;" alt=""> </a>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,12 +184,12 @@
                             color: white;
                             padding: 27px 95px;
                             text-decoration: none;
-                            margin: 64px 110px;
+                            margin: 90px 110px;
                             cursor: pointer;
                             border-radius: 27px;
                             /* font-size: larger; */
                             font-size: 30px;
-                            font-weight: 600;" ></div>
+                            font-weight: 600;"></div>
 
     </form>
 </body>
@@ -431,6 +434,10 @@
 
     }
 
+    /* html {
+        zoom: 55%;
+    } */
+
     .form-icon {
         width: 40px;
         height: 40px;
@@ -451,7 +458,8 @@
         }
 
         html {
-            zoom: 55%;
+            zoom: 50%;
         }
     }
+   
 </style>
