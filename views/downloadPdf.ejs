@@ -92,7 +92,9 @@
                                     </div>
                                 </div>
                                 <div class="phone">
-                                    <a href="tel:+91<%= user.phone %>" style="text-decoration: none; color: black;">
+                                    <a href="tel:+91<%= user.phone %>" style="text-decoration: none; color: black;   -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;">
                                         <div class="infophon">
                                             <h4>PHONE</h4>
                                             <p>
@@ -184,8 +186,11 @@
                             color: white;
                             padding: 27px 95px;
                             text-decoration: none;
-                            margin: 90px 110px;
-                            cursor: pointer;
+                            margin: 40px 110px;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                             cursor: pointer;
                             border-radius: 27px;
                             /* font-size: larger; */
                             font-size: 30px;
@@ -200,7 +205,7 @@
         margin: 0px;
         padding: 0px;
         max-width: 600px;
-        max-height: 1050px;
+
         margin: 0 auto;
     }
 
@@ -352,6 +357,9 @@
 
     h4 {
         font-size: 15px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 800;
         padding-top: 25px;
@@ -460,5 +468,13 @@
         html {
             zoom: 50%;
         }
+    }
+
+    @media only screen and (min-height: 1070px) {
+        .container {
+            max-height: 1050px;
+        }
+
+
     }
 </style>
